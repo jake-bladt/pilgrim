@@ -7,7 +7,9 @@ All microservice clusters require a way to authenticate users. Pilgrim is a clus
 
 ## Questions
 
-Is it possible to break IdentityServer 4 into parts and deploy it as serverless functions?
+* Is it possible to break IdentityServer 4 into parts and deploy it as serverless functions?
+* Can I build and deploy an Azure Function (FaaS) conditionally depending on variables checked into code?
+* Can I build and deploy an Azure Function (FaaS) conditionally depending on environmental variables? 
 
 ## Links
 
