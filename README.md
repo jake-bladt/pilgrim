@@ -13,6 +13,7 @@ All microservice clusters require a way to authenticate users. Pilgrim is a clus
 
 ## Links
 
+* [How to store a password in database?](https://www.geeksforgeeks.org/store-password-database/)
 * [Overview of ASP.NET Core Security](https://docs.microsoft.com/en-us/aspnet/core/security/?view=aspnetcore-3.0) - Start here.
 * [Security Basics and ASP.NET Support (C#)](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/older-versions-security/introduction/security-basics-and-asp-net-support-cs)
 * [An Overview of Forms Authentication (C#)](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/older-versions-security/introduction/an-overview-of-forms-authentication-cs)
