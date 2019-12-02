@@ -17,6 +17,8 @@ The most secure method is to use both an application-level static salt and a use
 
 In addition to a full suite of unit tests, the application will require automated penetration and "cracking" tests. Cracking tests should have an adjustable intensity to allow for periodic "no-holds-barred" testing.
 
+Also, we should figure out how feasible it is to create and destroy databases in Azure on demand for automated testing.
+
 ## Questions
 
 * Is it possible to break IdentityServer 4 into parts and deploy it as serverless functions?
