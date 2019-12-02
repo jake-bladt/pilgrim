@@ -13,6 +13,10 @@ A _salt_ is an alphanumeric representation of a binary number, an encoding like 
 
 The most secure method is to use both an application-level static salt and a user-level dynamic salt in order to prevent both single-point-of-breach and single-rainbow-table cryptanalysis.
 
+## Testing
+
+In addition to a full suite of unit tests, the application will require automated penetration and "cracking" tests. Cracking tests should have an adjustable intensity to allow for periodic "no-holds-barred" testing.
+
 ## Questions
 
 * Is it possible to break IdentityServer 4 into parts and deploy it as serverless functions?
