@@ -9,7 +9,8 @@ All microservice clusters require a way to authenticate users. Pilgrim is a clus
 
 * Is it possible to break IdentityServer 4 into parts and deploy it as serverless functions?
 * Can I build and deploy an Azure Function (FaaS) conditionally depending on variables checked into code?
-* Can I build and deploy an Azure Function (FaaS) conditionally depending on environmental variables? 
+* Can I build and deploy an Azure Function (FaaS) conditionally depending on environmental variables?
+* Which characters should go into a password salt? All upper/lower letters + digits + shifted digits = (26 + 26 + 10 + 10) = 72. Sixty-four could be pulled out of a random bitstream with six bits. A 64-character salt with 64 possible character values = a keyspace of 2<sup>6<sup>36</sup></sup> possible values.
 
 ## Links
 
