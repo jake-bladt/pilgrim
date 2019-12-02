@@ -28,6 +28,7 @@ Also, we should figure out how feasible it is to create and destroy databases in
 
 ## Links
 
+* [Geary tests (test of randomness](https://www.statisticssolutions.com/runs-test-of-randomness/)
 * [Generating secure random numbers in C#](https://stackify.com/csharp-random-numbers/)
 * [RNGCryptoServiceProvider Class](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.rngcryptoserviceprovider?redirectedfrom=MSDN&view=netframework-4.8)
 * [RNGCryptoServiceProvider in .Net Core](https://stackoverflow.com/questions/38632735/rngcryptoserviceprovider-in-net-core)
