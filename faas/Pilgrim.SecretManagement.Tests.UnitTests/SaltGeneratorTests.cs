@@ -1,4 +1,4 @@
-using System;
+using FluentAssertions;
 using Xunit;
 
 namespace Pilgrim.SecretManagement.Tests.UnitTests
@@ -6,10 +6,16 @@ namespace Pilgrim.SecretManagement.Tests.UnitTests
     public class SaltGeneratorTests
     {
         [Theory]
-        [InlineData("jakebladt.com", "1234567890")]
-        public void TestRoundTrip(string plaintext, string salt)
+        [InlineData(16)]
+        [InlineData(32)]
+        [InlineData(128)]
+        [InlineData(512)]
+        [InlineData(3072)]
+        public void RandomSaltsMatchRequestedLength(int length)
         {
-
+            var gen = new SaltGenerator();
+            var salt = gen.GenerateSalt(length);
+            salt.Length.Should().Be(length);
         }
     }
 }
