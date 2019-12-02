@@ -5,6 +5,14 @@ a microservice cluster for single-domain authentication.
 
 All microservice clusters require a way to authenticate users. Pilgrim is a cluster of microservices for managing those tasks.
 
+## Notes
+
+### Password Salting
+
+A _salt_ is an alphanumeric representation of a binary number, an encoding like UTF-8. It is prepended or appended to a plaintext password to thwart the use of off-the-shelf rainbow tables for brute-force cryptanalysis. Static salts have the advantage of not being stored with usernames and requiring an additional breach to reveal. Dynamic salts are stored with the password on a per-user basis, but have the advantage of requiring a unique rainbow table for each user.
+
+The most secure method is to use both an application-level static salt and a user-level dynamic salt in order to prevent both single-point-of-breach and single-rainbow-table cryptanalysis.
+
 ## Questions
 
 * Is it possible to break IdentityServer 4 into parts and deploy it as serverless functions?
