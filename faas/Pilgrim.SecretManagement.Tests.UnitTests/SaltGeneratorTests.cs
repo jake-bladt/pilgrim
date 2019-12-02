@@ -3,10 +3,11 @@ using Xunit;
 
 namespace Pilgrim.SecretManagement.Tests.UnitTests
 {
-    public class UnitTest1
+    public class SaltGeneratorTests
     {
-        [Fact]
-        public void Test1()
+        [Theory]
+        [InlineData("jakebladt.com", "1234567890")]
+        public void TestRoundTrip(string plaintext, string salt)
         {
 
         }
