@@ -14,6 +14,7 @@ All microservice clusters require a way to authenticate users. Pilgrim is a clus
 ## Links
 
 * [Generating secure random numbers in C#](https://stackify.com/csharp-random-numbers/)
+* [RNGCryptoServiceProvider Class](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.rngcryptoserviceprovider?redirectedfrom=MSDN&view=netframework-4.8)
 * [How to store a password in database?](https://www.geeksforgeeks.org/store-password-database/)
 * [How to store user passwords securely?](https://nakedsecurity.sophos.com/2013/11/20/serious-security-how-to-store-your-users-passwords-safely/)
 * [Password-Based Key Derivation Function 2](https://en.wikipedia.org/wiki/PBKDF2)
