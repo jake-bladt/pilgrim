@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pilgrim", "Pilgrim\Pilgrim.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pilgrim.SecretManagement", "Pilgrim.SecretManagement\Pilgrim.SecretManagement.csproj", "{68CA8099-91CB-42CF-BAD6-67565326B930}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pilgrim.SecretManagement.Tests.UnitTests", "Pilgrim.SecretManagement.Tests.UnitTests\Pilgrim.SecretManagement.Tests.UnitTests.csproj", "{B917C26D-9E4A-4917-A913-73A0FD4FF369}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{68CA8099-91CB-42CF-BAD6-67565326B930}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68CA8099-91CB-42CF-BAD6-67565326B930}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68CA8099-91CB-42CF-BAD6-67565326B930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B917C26D-9E4A-4917-A913-73A0FD4FF369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B917C26D-9E4A-4917-A913-73A0FD4FF369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B917C26D-9E4A-4917-A913-73A0FD4FF369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B917C26D-9E4A-4917-A913-73A0FD4FF369}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
