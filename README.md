@@ -1,5 +1,5 @@
 # Pilgrim
-a microservice cluster for authentication
+a microservice cluster for single-domain authentication.
 
 ## Summary
 
