@@ -11,6 +11,8 @@ namespace Pilgrim.SecretManagement
 
     public class SaltGenerator : ISaltGenerator
     {
+        protected readonly string PossibleChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@";
+        protected readonly int BytesPerChar = 6;
 
         public string Encode(byte[] byteArray)
         {
