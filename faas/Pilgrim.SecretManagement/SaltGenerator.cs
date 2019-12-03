@@ -19,10 +19,8 @@ namespace Pilgrim.SecretManagement
 
         public byte[] GenerateSalt(int byteLength)
         {
-            var rng = new Random();
-            var ret = new byte[byteLength];
-            rng.NextBytes(ret);
-            return ret;
+            var rng = new tmr.Random();
+            return rng.GetByteArray(byteLength);
         }
     }
 }
