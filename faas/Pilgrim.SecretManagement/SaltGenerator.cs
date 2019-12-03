@@ -23,8 +23,8 @@ namespace Pilgrim.SecretManagement
             {
                 byte[] forChar = new byte[BytesPerChar];
                 Array.Copy(byteArray, i, forChar, 0, BytesPerChar);
-                var index = BitConverter.ToInt32(forChar, 0);
-                ret.Append(PossibleChars[index]);
+                var index = BitConverter.ToInt64(forChar, 0);
+                ret.Append(PossibleChars[(Int32)index]);
             }
 
             return ret.ToString();
