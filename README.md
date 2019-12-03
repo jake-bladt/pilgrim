@@ -17,6 +17,8 @@ The most secure method is to use both an application-level static salt and a use
 
 In addition to a full suite of unit tests, the application will require automated penetration and "cracking" tests. Cracking tests should have an adjustable intensity to allow for periodic "no-holds-barred" testing.
 
+Also, we should figure out how feasible it is to create and destroy databases in Azure on demand for automated testing.
+
 ## Questions
 
 * Is it possible to break IdentityServer 4 into parts and deploy it as serverless functions?
@@ -26,6 +28,7 @@ In addition to a full suite of unit tests, the application will require automate
 
 ## Links
 
+* [Geary tests (test of randomness](https://www.statisticssolutions.com/runs-test-of-randomness/)
 * [Generating secure random numbers in C#](https://stackify.com/csharp-random-numbers/)
 * [RNGCryptoServiceProvider Class](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.rngcryptoserviceprovider?redirectedfrom=MSDN&view=netframework-4.8)
 * [RNGCryptoServiceProvider in .Net Core](https://stackoverflow.com/questions/38632735/rngcryptoserviceprovider-in-net-core)
