@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text;
+
 using tmr = Tedd.MoreRandom;
 
 namespace Pilgrim.SecretManagement
@@ -16,7 +18,16 @@ namespace Pilgrim.SecretManagement
 
         public string Encode(byte[] byteArray)
         {
-            throw new NotImplementedException();
+            var ret = new StringBuilder();
+            for(int i = 0; i < byteArray.Length; i += BytesPerChar)
+            {
+                byte[] forChar = new byte[BytesPerChar];
+                Array.Copy(byteArray, i, forChar, 0, BytesPerChar);
+                var index = BitConverter.ToInt32(forChar, 0);
+                ret.Append(PossibleChars[index]);
+            }
+
+            return ret.ToString();
         }
 
         public byte[] GenerateSalt(int byteLength)

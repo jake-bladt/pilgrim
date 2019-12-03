@@ -21,7 +21,7 @@ namespace Pilgrim.SecretManagement.Tests.UnitTests
         [Theory]
         [InlineData(new byte[] { 8 }, "H")]
         [InlineData(new byte[] { 0, 0, 0, 0, 0, 8 }, "H")]
-        public void EncodingWorks(byte[] bytes, string expected)
+        public void DefaultEncodingWorks(byte[] bytes, string expected)
         {
             var gen = new SaltGenerator();
             var encoding = gen.Encode(bytes);
