@@ -1,4 +1,5 @@
 ﻿using System;
+using tmr = Tedd.MoreRandom;
 
 namespace Pilgrim.SecretManagement
 {
@@ -10,6 +11,7 @@ namespace Pilgrim.SecretManagement
 
     public class SaltGenerator : ISaltGenerator
     {
+
         public string Encode(byte[] byteArray)
         {
             throw new NotImplementedException();
@@ -17,7 +19,10 @@ namespace Pilgrim.SecretManagement
 
         public byte[] GenerateSalt(int byteLength)
         {
-            throw new NotImplementedException();
+            var rng = new Random();
+            var ret = new byte[byteLength];
+            rng.NextBytes(ret);
+            return ret;
         }
     }
 }
